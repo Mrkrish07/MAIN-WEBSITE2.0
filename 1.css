@@ -1,0 +1,75 @@
+/* Container styles */
+.course-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Individual card styles */
+.course-card {
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Hover effects */
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.course-card h2 {
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+}
+
+/* Description styling */
+.course-card .description {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 20px;
+}
+
+/* Subtype list styling */
+.course-card .subtypes {
+    list-style: none;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.course-card:hover .subtypes {
+    opacity: 1;
+}
+
+/* List item styling */
+.course-card .subtypes li {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Custom colors for each card */
+.course-card.basic {
+    border-color: rgb(76, 175, 80);
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+}
+
+.course-card.intermediate {
+    border-color: #ff9800;
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+}
+
+.course-card.advanced {
+    border-color: #2196f3;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
